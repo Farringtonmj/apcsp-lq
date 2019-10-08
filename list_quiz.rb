@@ -21,8 +21,39 @@ end
 
 
 
-puts three_even?([2, 1, 3, 5])
-puts three_even?([2, 4, 12, 5])
-puts three_even?([2, 1, 4, 6])
-puts three_even?([1, 4, 6, 4])
-puts three_even?([])
+#puts three_even?([2, 1, 3, 5])
+#puts three_even?([2, 4, 12, 5])
+#puts three_even?([2, 1, 4, 6])
+#puts three_even?([1, 4, 6, 4])
+#puts three_even?([])
+
+
+
+
+
+
+
+
+
+
+def bigger_two(list, list2)
+    total1 = 0
+    total2 = 0
+    list.each do |n|
+        total1 += n
+    end
+    list2.each do |n|
+        total2 += n
+    end
+    if total1 > total2
+        return list
+    elsif total1 < total2
+        return list2
+    else
+        return list
+    end
+end
+
+print bigger_two([1, 2], [3, 4]), "\n"
+print bigger_two([1, 7], [4, 4]), "\n"
+print bigger_two([4, 5], [2, 3]), "\n"
