@@ -21,11 +21,11 @@ end
 
 
 
-#puts three_even?([2, 1, 3, 5])
-#puts three_even?([2, 4, 12, 5])
-#puts three_even?([2, 1, 4, 6])
-#puts three_even?([1, 4, 6, 4])
-#puts three_even?([])
+puts three_even?([2, 1, 3, 5])
+puts three_even?([2, 4, 12, 5])
+puts three_even?([2, 1, 4, 6])
+puts three_even?([1, 4, 6, 4])
+puts three_even?([])
 
 
 
@@ -57,3 +57,37 @@ end
 print bigger_two([1, 2], [3, 4]), "\n"
 print bigger_two([1, 7], [4, 4]), "\n"
 print bigger_two([4, 5], [2, 3]), "\n"
+
+
+
+
+
+
+
+
+
+
+def series_up(n)
+    new_array = []
+    m = 1
+    n.times do
+        m.times do |l|
+            l = n - 1
+            while l >=2
+                new_array.push((n - l) )
+                l -= 1
+            end
+        end
+        n += 1
+    end
+
+
+    
+
+    return new_array
+end
+
+
+
+print series_up(3)
+
