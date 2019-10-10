@@ -35,7 +35,6 @@ puts three_even?([])
 
 
 
-
 def bigger_two(list, list2)
     total1 = 0
     total2 = 0
@@ -70,24 +69,22 @@ print bigger_two([4, 5], [2, 3]), "\n"
 def series_up(n)
     new_array = []
     m = 1
-    n.times do
-        m.times do |l|
-            l = n - 1
-            while l >=2
-                new_array.push((n - l) )
-                l -= 1
-            end
+    l = 1
+    while m <= n   # it didn't rotate through the correct number of times
+        while l <= m
+            new_array.push(l)
+            l += 1
         end
-        n += 1
+        l = 1
+        m += 1
     end
-
-
-    
 
     return new_array
 end
 
 
 
-print series_up(3)
+print series_up(3), "\n"
+print series_up(2), "\n"
+print series_up(1), "\n"
 
